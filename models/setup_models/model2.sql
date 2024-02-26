@@ -1,0 +1,1 @@
+select cc_city, cc_county, cc_state from tpcds.call_center
