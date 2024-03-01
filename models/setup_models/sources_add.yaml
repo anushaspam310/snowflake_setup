@@ -1,0 +1,17 @@
+version: 2
+
+sources:
+  - name: DBT_TABLES
+    database: SNOWFLAKE_DBT_SETUP  
+    schema: DBT_TABLES  
+    tables:
+      - name: PRODUCTS
+
+  - name: TPCDS
+    schema: TPCDS
+    tables: 
+      - name: CUSTOMER
+      - name: CUSTOMER_DEMOGRAPHICS
+      - name: CUSTOMER_ADDRESS
+      - name : CALL_CENTER
+
