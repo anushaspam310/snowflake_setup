@@ -1,3 +1,3 @@
-select *
-from SNOWFLAKE_DBT_SETUP.DBT_TABLES.PRODUCTS
+select * from
+{{ source('DBT_TABLES','PRODUCTS')}}
 
