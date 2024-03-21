@@ -40,3 +40,6 @@ models:
     # Applies to all files under models/example/
     example:
       +materialized: table
+
+on-run-start:
+- "{{ area_of_circle_dbt() }}"
