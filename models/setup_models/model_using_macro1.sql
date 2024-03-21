@@ -1,4 +1,4 @@
-select id, 
-price,
-{{ to_dollars('price') }} as price_usd
-from SNOWFLAKE_DBT_SETUP.DBT_TABLES.PRODUCTS
+select product_id, 
+product_name,
+{{ to_dollars('product_price') }} as price_usd
+from {{ source('DBT_TABLES','PRODUCTS')}}

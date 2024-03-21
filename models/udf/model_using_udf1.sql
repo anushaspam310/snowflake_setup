@@ -1,0 +1,1 @@
+SELECT area_of_circle_dbt(5) AS area

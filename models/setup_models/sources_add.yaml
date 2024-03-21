@@ -2,7 +2,6 @@ version: 2
 
 sources:
   - name: DBT_TABLES
-    database: SNOWFLAKE_DBT_SETUP  
     schema: DBT_TABLES  
     tables:
       - name: PRODUCTS
